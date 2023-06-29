@@ -60,14 +60,14 @@ public class Rogue extends Player {
             }
         }
 
-        if (targets.size() <= 0) {
+        if (targetsInRange.size() <= 0) {
             GameManager.addMessage(name + " used Fan of Knives, but there were no targets in range");
             return new Report();
         }
 
         List<Unit> hitResult = new ArrayList<>();
         StringBuilder message = new StringBuilder(name + " used Fan of Knives:");
-        for (Unit target : targets) {
+        for (Unit target : targetsInRange) {
             int damage = target.takeDamage(attack);
             message.append("\n\tFan of Knives hit " + target.getName() + " for " + damage + " damage");
             hitResult.add(target);
