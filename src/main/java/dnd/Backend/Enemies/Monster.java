@@ -22,6 +22,16 @@ public class Monster extends Enemy {
 
     public Position2D turn(Unit player) {
         Position2D playerPosition = player.getPosition();
+
+        boolean isStuck = true;
+        for (Position2D dir : Position2D.Directions) {
+            if (GameManager.isTileEmpty(Position2D.add(position, dir)) && isStuck)
+                isStuck = false;
+        }
+
+        if (isStuck)
+            return null;
+
         if (Position2D.getRange(position, playerPosition) < visionRange) {
             int dx = playerPosition.x - position.x;
             int dy = playerPosition.y - position.y;

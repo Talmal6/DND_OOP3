@@ -23,7 +23,7 @@ public class GameBoard {
     public GameBoard(CharacterFactory _cf, Player _player) {
         cf = _cf;
         player = _player;
-        level = 1;
+        level = 2;
     }
 
     public double getRange(Position2D pos1, Position2D pos2) {
@@ -90,14 +90,14 @@ public class GameBoard {
 
     private String readMap(int level) {
         StringBuilder text = new StringBuilder();
-        String path = System.getProperty("user.dir") + "\\dnd\\levels_dir\\level" + level + ".txt";
+        String path = System.getProperty("user.dir") + "\\src\\main\\java\\dnd\\levels_dir\\level" + level + ".txt";
         try (BufferedReader reader = new BufferedReader(new FileReader(path))) {
             String line;
             while ((line = reader.readLine()) != null) {
                 text.append(line).append("\n");
             }
         } catch (IOException e) {
-            text.append("An error occurred while uploading the text: " + e.getMessage());
+            text.append("An error occurred while loading level file: " + e.getMessage());
         }
         return text.toString();
     }
