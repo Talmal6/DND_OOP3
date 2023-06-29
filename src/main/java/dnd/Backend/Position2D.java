@@ -2,7 +2,7 @@ package dnd.Backend;
 
 public class Position2D {
 
-    // public static final Position2D ZERO = new Position2D(0, 0);
+    public static final Position2D ZERO = new Position2D(0, 0);
     public static final Position2D UP = new Position2D(0, -1);
     public static final Position2D DOWN = new Position2D(0, 1);
     public static final Position2D LEFT = new Position2D(-1, 0);

@@ -50,6 +50,21 @@ public class GameCLI {
         }
     }
 
+    public void printEndScreen() {
+        clearConsole();
+        System.out.println("\r\n" + //
+                "   _____                            _         _       _   _                 _ \r\n" + //
+                "  / ____|                          | |       | |     | | (_)               | |\r\n" + //
+                " | |     ___  _ __   __ _ _ __ __ _| |_ _   _| | __ _| |_ _  ___  _ __  ___| |\r\n" + //
+                " | |    / _ \\| '_ \\ / _` | '__/ _` | __| | | | |/ _` | __| |/ _ \\| '_ \\/ __| |\r\n" + //
+                " | |___| (_) | | | | (_| | | | (_| | |_| |_| | | (_| | |_| | (_) | | | \\__ \\_|\r\n" + //
+                "  \\_____\\___/|_| |_|\\__, |_|  \\__,_|\\__|\\__,_|_|\\__,_|\\__|_|\\___/|_| |_|___(_)\r\n" + //
+                "                     __/ |                                                    \r\n" + //
+                "                    |___/                                                     \r\n" + //
+                "");
+        System.out.println("\nYou have reached the end of the dungeon!");
+    }
+
     public void printOpeningScreen(List<Player> characters) {
         int index = 1;
         StringBuilder selectionString = new StringBuilder("Welcome to Dungeons & Dragons!\n");

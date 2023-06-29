@@ -101,7 +101,6 @@ public class GameManager {
                 player.die();
                 gameCLI.addMessage(player.getName() + " died");
                 isOver = true;
-                renderUI();
             }
 
             board.tick();
@@ -216,8 +215,8 @@ public class GameManager {
         scanner = new Scanner(System.in);
         scanner.nextLine();
         if (!board.advanceLevel()) {
-            gameCLI.addMessage("You have reached the end of the dungeon!");
             isOver = true;
+            gameCLI.printEndScreen();
             System.exit(0);
         } else {
             gameCLI.addMessage("You have entered to the next level of the dungeon");

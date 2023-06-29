@@ -221,7 +221,7 @@ public class AppTest {
     public void testMoveIntoBlock() {
         Player player = characterFactory.choosePlayer(CharacterFactory.PlayerCharacter.JON_SNOW);
         GameBoard gameBoard = new GameBoard(characterFactory, player);
-        gameBoard.parseLevelTest("@#...\n.....\n.....\n.....\n.....\n");
+        gameBoard.parseLevel("@#...\n.....\n.....\n.....\n.....\n");
 
         // Set up the game tile with a block at position (1, 0)
         GameTile blockTile = new GameTile(GameTile.TileType.WALL, null);

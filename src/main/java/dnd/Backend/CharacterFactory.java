@@ -75,15 +75,15 @@ public class CharacterFactory {
     public CharacterFactory() {
         playerCharacters = new LinkedHashMap<PlayerCharacter, Player>() {
             {
-                put(PlayerCharacter.JON_SNOW, new Warrior("Jon Snow", 300, 30, 4, 3, new Position2D(0, 0)));
-                put(PlayerCharacter.THE_HOUND, new Warrior("The Hound", 400, 20, 6, 5, new Position2D(0, 0)));
+                put(PlayerCharacter.JON_SNOW, new Warrior("Jon Snow", 300, 30, 4, 3, Position2D.ZERO));
+                put(PlayerCharacter.THE_HOUND, new Warrior("The Hound", 400, 20, 6, 5, Position2D.ZERO));
                 put(PlayerCharacter.MELISANDRE,
-                        new Mage("Melisandre", 100, 5, 1, 300, 30, 40, 5, 6, new Position2D(0, 0)));
+                        new Mage("Melisandre", 100, 5, 1, 300, 30, 40, 5, 6, Position2D.ZERO));
                 put(PlayerCharacter.THOROS_OF_MYR,
-                        new Mage("Thoros of Myr", 250, 25, 4, 150, 20, 20, 3, 4, new Position2D(0, 0)));
-                put(PlayerCharacter.ARYA_STARK, new Rogue("Arya Stark", 150, 40, 2, 20, new Position2D(0, 0)));
-                put(PlayerCharacter.BRONN, new Rogue("Bronn    ", 250, 35, 3, 50, new Position2D(0, 0)));
-                put(PlayerCharacter.YGRITTE, new Hunter("Ygritte ", 220, 30, 2, 6, new Position2D(0, 0)));
+                        new Mage("Thoros of Myr", 250, 25, 4, 150, 20, 20, 3, 4, Position2D.ZERO));
+                put(PlayerCharacter.ARYA_STARK, new Rogue("Arya Stark", 150, 40, 2, 20, Position2D.ZERO));
+                put(PlayerCharacter.BRONN, new Rogue("Bronn    ", 250, 35, 3, 50, Position2D.ZERO));
+                put(PlayerCharacter.YGRITTE, new Hunter("Ygritte ", 220, 30, 2, 6, Position2D.ZERO));
             }
         };
     }
