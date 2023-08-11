@@ -104,7 +104,7 @@ Each class has a special ability. Player may cast a special ability to improve i
 The player may encounter enemies while traveling around the world. The enemies are divided into three types.
 
 ### Monsters
-Monsters can move 1 step in any direction (if it's empty), and may chase the player if the player is within its vision range.
+Monsters can move 1 step in any direction (if it's empty), and may chase the player if the player is within its vision range.  
 ![image](https://github.com/Talmal6/DND_OOP3/assets/118106721/d5e1e2bc-9212-41fb-877c-efa13e754709)
 
 ### Traps
