@@ -128,4 +128,4 @@ The player may perform any of the following actions, using the assigned input:
 ![image](https://github.com/Talmal6/DND_OOP3/assets/118106721/f95f2b6e-fbf1-45c3-bdde-17baecea2b7f)
 
 ## About
-This game was coded in Java by Or Malky & Tal Malma as final project for 'Principles of OOP' (OOSD) course @ BGU 23
+This game was coded in Java by **Or Malky & Tal Malma** as final project for 'Principles of OOP' (OOSD) course @ BGU 23
