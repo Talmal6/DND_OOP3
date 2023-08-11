@@ -8,7 +8,8 @@ to the next level of the dungeon. Once you complete all the levels, you win the 
 ## Project Goals
 * Practice different OOP design patterns (Observer, Factory, Strategy, etc.)
 * Practice dynamicly designing the project with high modularity
-* Expirience working around different language limitations, while avoiding bad coding habits (instanceOf, casting, etc.)
+* Practice proper Separation of Concerns inside the project, mainly seperating the Frontend (CLI) from the Backend
+* Experience working around different language limitations, while avoiding bad coding habits (instanceOf, casting, etc.)
 * Finding effecient solutions to different design problems
 * Practice proper unit testings and debugging
 
